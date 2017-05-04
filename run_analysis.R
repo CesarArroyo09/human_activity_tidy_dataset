@@ -4,7 +4,7 @@
 #
 # The script assumes you have unzip the data file
 # "getdata_projectfiles_UCI HAR Dataset.zip" in your working directory. This is
-# your working directory contains the a directory called "UCI HAR Dataset".
+# your working directory contains a directory called "UCI HAR Dataset".
 #
 # This script also assumes you have the tidyverse packages installed.
 # tidyverse is a set of packages which work very nice together. This is because
@@ -240,4 +240,5 @@ write_delim(summarized.data, "./Summarized_Human_Activity_Data.txt")
 rm(activity.labels.cols, train.dataset, test.dataset, test.subject.ids,
    test.activity.ids, train.subject.ids, train.activity.ids, full.test.dataset,
    full.train.dataset, col.names, activity.labels, full.column.names, pattern,
-   replacement, selected.columns, selected.columns.names)
+   replacement, selected.columns, selected.columns.names, formatColumn,
+   replacePattern)
