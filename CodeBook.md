@@ -105,10 +105,9 @@ ActivityName.
 Sitting, Standing or Laying.
 
 The meaning of the next 66 variables names can be constructed from the next list which specifies the meaning of each of the
-strings that can be found in the name of a variable.
+strings that can be found in the name of a variable. These variable are in normalized units between [-1, 1], so they are all in the same units; more information about this in HumanActivityData.
 
-List 3: Semantics of the strings found in the variable names for SumHumanActivityData
---------
+### List 3: Semantics of the strings found in the variable names for SumHumanActivityData
 This list of semantics does not apply to the SubjectID and ActivityName variables which are described above.
 - t, f: Each variable starts with one of these two strings. 't' prefix is for the time domain signals and 'f' prefix is for the frequency domain signals.
 - Body, Gravity: The data is about the smartphone (in the Body of the person) or from gravity (the gravitational attraction from Earth). Only one of these two appears in each name.
