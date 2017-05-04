@@ -52,7 +52,7 @@ We want to convert the names obtained from features.txt to sintactically valid n
 An object called summarized.data is constructed by grouping human.activity.dataset by SubjectID and ActivityName (group_by function) and summarizing by taking the mean for each non grouped column (summarise_all function). Column names for summarized.data are updated by adding "Avg" at the end of each averaged measurement. Then, using the dplyr function write_delim, summarized.data is written to the file Summarized_Human_Activity_Data.txt. Finally, all the residual objects and functions are deleted from the Global Environment.
 
 ## Executing run_analysis.R
-Your working directory must contain the "UCI HAR Dataset" directory, the required packages as explained above and the script run_analysis.R should be in top level of your working directory. If being so, just source the script and you must end with object summarized.data in your global environment and with this data copied to the file Summarized_Human_Activity_Data.txt in your working directory.
+Your working directory must contain the "UCI HAR Dataset" directory at the top level, the required packages as explained above and the script run_analysis.R should be in top level of your working directory. If being so, just source the script and you must end with object summarized.data in your global environment and with this data copied to the file Summarized_Human_Activity_Data.txt in your working directory.
 
 ## Reading Summarized_Human_Activity_Data.txt
 To read this text file the best choice is to use read_table2() from the readr package. The argument should be the path to the file and no further arguments are required.
